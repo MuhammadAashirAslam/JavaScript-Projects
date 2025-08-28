@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assets Information bot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            <h2> Assets Information bot</h2>
+        </div>
+        
+        <!-- Chat Box -->
+        <div class="chat-container">
+            <div id="chat-window" class="chat-window"></div>
+            <div class="input-container">
+                <textarea id="user-input" placeholder="Which stock do you want information on..."></textarea>
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+        
+        <!-- Cards Section -->
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://img.icons8.com/color/48/gold-bars.png" alt="Gold Icon">
+                    <span>Gold</span>
+                </div>
+                <div class="price">$3387.34</div>
+                <div class="change positive">↑ $9.41 (+0.47%)</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://img.icons8.com/color/48/oil-industry.png" alt="Oil Icon">
+                    <span>Crude Oil</span>
+                </div>
+                <div class="price">$63.88</div>
+                <div class="change negative">↓ $0.85 (-1.15%)</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://img.icons8.com/color/48/bitcoin.png" alt="Bitcoin Icon">
+                    <span>Bitcoin</span>
+                </div>
+                <div class="price">$113,127.81</div>
+                <div class="change positive">↑ $2,341 (+5.74%)</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://img.icons8.com/color/48/bar-chart.png" alt="S&P 500 Icon">
+                    <span>S&P 500</span>
+                </div>
+                <div class="price">6,480.32</div>
+                <div class="change positive">↑ 12.45 (+0.26%)</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
